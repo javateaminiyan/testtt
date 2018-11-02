@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".BuildingPlan.NewApplicationActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/buildingplan_registration_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/building_licence"
+            app:titleTextColor="@color/white"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary">
+
+                <com.badoualy.stepperindicator.StepperIndicator
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    app:stpi_circleColor="@color/white"
+                    android:id="@+id/stepper_building_license_registration_indicator"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:stpi_indicatorColor="@color/indicatorTint"
+                    app:stpi_stepCount="3"
+                    app:stpi_indicatorRadius="@dimen/dimen_6dp"
+                    app:stpi_labels="@array/stepLabels_buildinglicense"
+                    app:stpi_labelColor="@color/white"
+                    app:stpi_lineColor="@color/white"
+                    app:stpi_lineDoneColor="@color/indicatorTint"
+                    app:stpi_showDoneIcon="true"
+                    app:stpi_circleRadius="@dimen/dimen_7dp"/>
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/buildingplan_registration_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

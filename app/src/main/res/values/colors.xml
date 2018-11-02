@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1a237e</color>
+    <color name="colorPrimaryDark">#1a237e</color>
+    <color name="colorAccent">#4158b6</color>
+    <color name="button_color">#5168c7</color>
+    <color name="white">#fff</color>
+    <color name="black">#5e5c5c</color>
+    <color name="background_color">#7386D5</color>
+    <color name="fabcolor">#48a7ac</color>
+    <color name="background">#dddddd</color>
+    <color name="normalcolor">#6b6b6b</color>
+
+
+    <color name="light_grey">#bbc2c2c2</color>
+
+    <color name="grey">#c2c2c2</color>
+    <color name="green">#468b2b</color>
+
+    <!--<color name="colorPink">#4C5760</color>-->
+    <color name="fab_bg_Color">#2B2D42</color>
+
+
+    <color name="holo_red_dark">#ffcc0000</color>
+
+    <color name="building_plan_card">#dededd</color>
+
+    <color name="ownrentalcolor">#6667e6</color>
+
+    <color name="redPrimaryDark">#ea0c0c</color>
+
+    <color name="indicatorTint">#334384</color>
+    <color name="buttonBackgroundColor">#334384</color>
+
+    <color name="warningcolor">#ac0404</color>
+
+    <color name="red">#d14343</color>
+
+    <color name="fb">#0b4783</color>
+
+
+    <color name="Sigin">#4f91ff</color>
+
+    <color name="Signup">#5ab55d</color>
+
+    <color name="googleplus">#FF4B26</color>
+
+    <color name="Chocolate">#D2691E</color>
+
+    <color name="blackForText">#5b5b5b</color>
+
+    <color name="buttongraident">#37c1da</color>
+
+    <color name="pPurple">#69628F</color>
+
+    <color name="textColorBlack">#5e5c5c</color>
+
+    <color name="property">#5082e5</color>
+    <color name="profession">#bf60b6</color>
+    <color name="water">#ff5967</color>
+    <color name="nonTax">#ffad40</color>
+
+
+    <color name="sky_blue">#FFBFCFE4</color>
+    <color name="leaf_green">#009933</color>
+
+    <color name="rose">#d1436b</color>
+
+    <color name="Title_color">#008080</color>
+    <color name="LightGrey">#D3D3D3</color>
+    <color name="ThemeLight">#fee5f2</color>
+
+
+    <color name="title_qp_textcolor">#3d3d3d</color>
+    <color name="Theme">#A30052</color>
+
+
+
+
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="etown_bg">#7386D5</color>
+    <color name="heading">#384fae</color>
+    <color name="colorNavText">#FFFF</color>
+
+
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/receipt_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:padding="5dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Receipt No :"/>
+
+            <TextView
+                android:id="@+id/coll_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:padding="@dimen/dimen_5dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Collection Date"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:visibility="gone"
+            android:id="@+id/ll_dis_pan"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/district"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:padding="5dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="District:"/>
+
+            <TextView
+                android:id="@+id/panchayat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:padding="@dimen/dimen_5dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Panchayat"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tax_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:padding="5dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Tax No :"/>
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:padding="@dimen/dimen_5dp"
+                android:fontFamily="@font/roboto_light"
+                android:background="@drawable/dotted"
+                android:text="Amount"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:visibility="gone"
+            android:id="@+id/ll_type_order"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mobile_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:padding="5dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Moblie :"/>
+
+            <TextView
+                android:id="@+id/order_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:padding="@dimen/dimen_5dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Oder No"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/ll_email"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_light"
+                android:text="Email Id :"/>
+
+            <TextView
+                android:id="@+id/email_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:padding="@dimen/dimen_5dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="email Id"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1.3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:padding="@dimen/dimen_5dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Name :"/>
+
+                <TextView
+                    android:id="@+id/assessment_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:padding="@dimen/dimen_5dp"
+                    android:fontFamily="@font/avvaiyar"
+                    android:text="Assessment Name"/>
+            </LinearLayout>
+
+          <ImageView
+              android:layout_width="@dimen/dimen_0dp"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/dimen_5dp"
+              android:src="@drawable/ic_download"
+              android:layout_weight=".3"
+              android:id="@+id/download"/>
+
+            <TextView
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_weight=".4"
+                android:padding="@dimen/dimen_5dp"
+                android:textStyle="bold"
+                android:layout_gravity="end"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/roboto_light"
+                android:text="View"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey"/>
+
+    </LinearLayout>
+
+</LinearLayout>

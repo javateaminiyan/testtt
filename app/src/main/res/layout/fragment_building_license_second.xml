@@ -1,0 +1,261 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="com.ashok.etown2.BuildingPlan.Fragments.BuildingLicenseSecondFragment">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/li_parent_lay"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Building site Address"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="italic|bold" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_light"
+                                android:hint="Survey No."
+                                android:id="@+id/et_surveyno"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/fragment_body_text_size"
+                                android:textStyle="italic"
+                                android:gravity="start" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_light"
+                                android:hint="Document No"
+                                android:id="@+id/et_documentno"
+                                android:inputType="text"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/fragment_body_text_size"
+                                android:textStyle="italic"/>
+                        </android.support.design.widget.TextInputLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_light"
+                                    android:hint="Door No"
+                                    android:id="@+id/et_doorno"
+                                    android:inputType="text"
+                                    android:textAlignment="viewStart"
+                                    android:textSize="@dimen/fragment_body_text_size"
+                                    android:textStyle="italic"
+                                    android:gravity="start" />
+                            </android.support.design.widget.TextInputLayout>
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_light"
+                                    android:hint="Ward No"
+                                    android:focusable="false"
+                                    android:id="@+id/et_wardno"
+                                    android:inputType="text"
+                                    android:textAlignment="viewStart"
+                                    android:textSize="@dimen/fragment_body_text_size"
+                                    android:textStyle="italic"
+                                    android:gravity="start" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_light"
+                                    android:hint="Street"
+                                    android:id="@+id/et_street"
+                                    android:focusable="false"
+                                    android:inputType="text"
+                                    android:textAlignment="viewStart"
+                                    android:textSize="@dimen/fragment_body_text_size"
+                                    android:textStyle="italic"
+                                    android:gravity="start" />
+                            </android.support.design.widget.TextInputLayout>
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_light"
+                                    android:hint="Town"
+                                    android:id="@+id/et_town"
+                                    android:inputType="text"
+                                    android:textAlignment="viewStart"
+                                    android:textSize="@dimen/fragment_body_text_size"
+                                    android:textStyle="italic"
+                                    android:gravity="start" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_light"
+                                android:hint="District"
+                                android:id="@+id/et_district"
+                                android:inputType="text"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/fragment_body_text_size"
+                                android:textStyle="italic"
+                                android:gravity="start" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="true"
+                            android:fontFamily="@font/roboto_light"
+                            android:hint="Pin Code"
+                            android:id="@+id/et_pincode"
+                            android:maxLength="6"
+                            android:inputType="number"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/fragment_body_text_size"
+                            android:textStyle="italic"
+                            android:gravity="start" />
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="true"
+                            android:id="@+id/et_plotno"
+                            android:maxLength="8"
+                            android:fontFamily="@font/roboto_light"
+                            android:hint="Plot No"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/fragment_body_text_size"
+                            android:textStyle="italic"
+                            android:gravity="start" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_light"
+                                android:hint="Block No"
+                                android:id="@+id/et_blockno"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/fragment_body_text_size"
+                                android:maxLength="8"
+                                android:textStyle="italic"
+                                android:gravity="start" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/btn_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#cc3300"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Back"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fragment_body_text_size"
+                        android:textStyle="italic|bold" />
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/btn_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#009933"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Next"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fragment_body_text_size"
+                        android:textStyle="italic|bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</layout>
+

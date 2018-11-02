@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:layout_gravity="center_vertical"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Sort By"
+            android:textColor="#444"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="0dp"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginRight="5dp"
+            android:text="Priority" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ed_border_box_linear_"
+            android:id="@+id/tv_low"
+            android:text="Low" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            android:id="@+id/tv_medium"
+            android:background="@drawable/edittext_e"
+            android:text="Medium" />
+        <TextView
+            android:layout_marginLeft="4dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/tv_high"
+            android:background="@drawable/edittext_e"
+            android:text="High" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_margin="4dp"
+            android:text="Ward" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/roboto_light"
+            android:id="@+id/tv_wardno"
+            android:background="@drawable/edittext_e"
+            android:text="Ward no" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_margin="4dp"
+            android:text="Street" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/roboto_light"
+            android:id="@+id/tv_street"
+            android:background="@drawable/edittext_e"
+            android:text="Street Name" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ed_border_box_linear_"
+            android:id="@+id/tv_reset"
+            android:text="Reset" />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ed_border_box_linear_"
+            android:id="@+id/tv_apply"
+            android:text="Apply" />
+    </LinearLayout>
+
+</LinearLayout>

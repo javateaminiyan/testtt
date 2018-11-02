@@ -1,0 +1,527 @@
+<resources>
+    <string name="app_name">Etowns</string>
+    <string name="fin_year">Select Financial Year</string>
+    <string name="fin_year_">Financial Year</string>
+    <string name="district"> District</string>
+    <string name="panchayat">Town Panchayat</string>
+    <string name="assno">Tax No</string>
+    <string name="submit">Submit</string>
+    <string name="paidhistory">Payment History</string>
+    <string name="track">Track</string>
+    <string name="asstitle"> New Assessment Details</string>
+    <string name="appstatus"> Approval Status</string>
+    <string name="reqno"> Request No / Mobile No </string>
+    <string name="toolbar_property_track_assessment"> Track New Assessment </string>
+    <string name="toolbar_water_track_assessment"> Track New Connection </string>
+    <string name="add">Add</string>
+
+    <string name="assessmentNumber">Assessment Number</string>
+    <string name="add_assessment_title">Please enter Assessment number you wish to Pay</string>
+    <string name="doorNum">Door No.</string>
+    <string name="wardNum">Ward No.</string>
+    <string name="streetName">Street Name</string>
+
+    <string name="toolbar_property">Property Tax </string>
+    <string name="toolbar_professiontax"> Profession Tax </string>
+    <string name="toolbar_watertax"> Water Tax </string>
+    <string name="toolbar_nontax"> Non Tax </string>
+    <string name="toolbar_death_details"> Death Details </string>
+    <string name="toolbar_birth_details"> Birth Details </string>
+
+
+    <string name="watertax_searchassessment"> Connection Search </string>
+    <string name="property_searchassessment"> Property Search </string>
+
+
+    <string name="title_activity_home">Etowns</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Murugan</string>
+    <string name="nav_header_subtitle">murugan@prematix.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nametransafer">Name Transfer</string>
+    <string name="mobileno">Mobile No</string>
+    <string name="emailId">Email Id</string>
+    <string name="trname">Transfer Name</string>
+    <string name="reg_doc">Registration Document</string>
+    <string name="upload">Upload</string>
+
+    <string name="choosefile">Choose File</string>
+    <string name="name_legel_doc">Name Legal Document</string>
+    <string name="death_certificate">Death Certificate </string>
+    <string name="property_name_transfer">Name Transfer</string>
+    <string name="profession_online_filing">Online Filing</string>
+
+    <string name="financial_year">Financial Year</string>
+    <string name="name">Name</string>
+    <string name="tax_no">Tax No</string>
+    <string name="door_no">Door No</string>
+    <string name="wardno">Ward No</string>
+    <string name="org_name">Organisation Name</string>
+    <string name="save">Save</string>
+    <string name="profession_track_online_filing">Track Online Filing</string>
+
+    <string name="track_online_filing">Track Online Filing</string>
+
+
+    <string name="snack_district_search">Please Choose District</string>
+    <string name="snack_panchayat_search">Please Choose Town Panchayat</string>
+    <string name="snack_financial_search">Please Choose Financial Year</string>
+    <string name="snack_taxno_search">Please Type Tax No</string>
+    <string name="water_title_trackassessment">Track New Connection</string>
+    <string name="water_title_newconnection">New Connection</string>
+    <string name="water_title_searchconnection">Connection Search</string>
+    <string name="toolbar_viewconnection">View Connection</string>
+    <string name="toolbar_viewdcb">View DCB</string>
+    <string name="tracknewassessment_viewtracking_doorno">Door No</string>
+    <string name="tracknewassessment_viewtracking_connectionType">Connection Type</string>
+    <string name="tracknewassessment_viewtracking_leasename">Lease Name</string>
+    <string name="toolbar_property_assessment_search">Assessment Search</string>
+    <string name="toolbar_water_assessment_search">Connection Search</string>
+    <string name="toolbar_property_payment_history">Payment History</string>
+    <string name="Death_apply_death_registration">Apply Death Registration</string>
+    <string name="Death_track_death_registration">Track Death Registration</string>
+    <string name="Death_death_certificate_search">Death Certificate Search</string>
+    <string name="Death_track_abstract">Death Abstract</string>
+    <string name="Birth_apply_registration">Apply Birth Registration</string>
+    <string name="Birth_abstract">Birth Abstract</string>
+    <string name="Birth_track_registration">Track Birth Registration</string>
+    <string name="Birth_certificate_search">Birth Certificate Search</string>
+    <string name="select_district">Select District</string>
+    <string name="select_panchayat">Select Panchayat</string>
+
+
+    <string name="hosur_office"><u>Hosur Office</u></string>
+    <string name="hosur_company_address">51, Step Colony, Dharga, Hosur - 635126 \n Tamilnadu, India.</string>
+    <string name="hosur_company_landline">Landline : 04344 270900</string>
+    <string name="hosur_company_mobile">Mobile No : 9344 270900</string>
+    <string name="hosur_company_email">info@prematix.com</string>
+    <string name="blr_company_email">infoblr@prematix.com</string>
+    <string name="blr_company_landline">Landline : 080255 22220</string>
+    <string name="blr_company_address">No.589, 2nd floor, VP Chambers, \n 1st Cross, 3rd Block, Koramangala, \n Bengaluru - 560034, \n Karnataka, India.</string>
+    <string name="blr_office"><u>Bangalore Office</u></string>
+
+    <string name="prematix">Prematix Software Solutions Pvt Ltd</string>
+    <string name="toolbar_grievances">Grievances</string>
+    <string name="grievances_register">Register Grievances</string>
+    <string name="track_grievances">Track Grievances</string>
+    <string name="toolbar_calculator">Property Calculator</string>
+
+
+    <string name="err_msg_district">Select District Name</string>
+    <string name="err_msg_panchayat">select Panchayat</string>
+
+    <string name="err_msg_buildingusage">Enter Building Usage</string>
+    <string name="err_msg_buildingtype">Enter Building Type</string>
+    <string name="err_msg_totalarea">Enter Total Area</string>
+    <string name="err_msg_blocation">Enter Building Location</string>
+    <string name="New_Assessment">New Assessment</string>
+    <string name="tracnewassessment_AssessmentType">AssessmentType</string>
+    <string name="assessment_txt_designationname">Designation Name</string>
+    <string name="assessment_txt_organisationname">Organisation Name</string>
+    <string name="assessment_txt_organisationcode">Organisation Code</string>
+    <string name="assessment_txt_trade_name">TradeName</string>
+
+
+    <string name="assmentsearch">Property Search</string>
+    <string name="type">Type</string>
+    <string name="trade">Trade</string>
+    <string name="organization">Organization</string>
+    <string name="tradename">Trade Name</string>
+    <string name="designationnname">Designation Name</string>
+    <string name="organizationname">Organization name</string>
+
+    <string name="doorno">Door No</string>
+    <string name="propertytax_no">Property Tax No.</string>
+    <string name="taxname">Tax Name</string>
+
+    <string name="connection_type">Connection Type </string>
+
+    <string name="slabrate">Slab Rate</string>
+    <string name="doc_enclosed">Document Enclosed</string>
+    <string name="trade_orgletter">Trade / Organization Letter</string>
+    <string name="incomedetails">Income Details</string>
+    <string name="blno"> Building Licence No</string>
+
+    <string name="property_tax_latest">Property Tax Receipt (Latest) </string>
+
+
+    <string name="err_msg_finyear">Select FinYear</string>
+
+    <string name="err_msg_mobileNo">Enter MobileNo</string>
+    <string name="err_msg_mobileNoLength"> MobileNo Length should be 10 digit</string>
+    <string name="err_msg_name">Enter Name</string>
+    <string name="err_msg_email">Enter valid Email</string>
+
+    <string name="err_msg_blno">Enter Building Licence No </string>
+    <string name="err_msg_bldate">Choose Building Licence Date</string>
+    <string name="err_msg_blockNo">Enter Block No</string>
+    <string name="err_msg_wardno">Enter Ward No</string>
+    <string name="err_msg_streetname">Enter Street Name</string>
+    <string name="err_msg_buildingzone">Enter Building Zone</string>
+    <string name="err_msg_bAge">Enter Building Age</string>
+    <string name="err_msg_taxtype">Enter Tax Type </string>
+    <string name="err_msg_slabrate">Enter Slab Rate</string>
+    <string name="err_msg_doorno">Enter Door No</string>
+    <string name="err_msg_tradlename">Enter Trade Name </string>
+    <string name="err_msg_taxno">Enter Property Tax No</string>
+    <string name="err_msg_taxname">Enter Tax Name</string>
+    <string name="err_msg_connectiontype">select connection type</string>
+    <string name="toolbar_new_assessment">New Assessment</string>
+    <string name="toolbar_trade_licence">Trade Licence</string>
+    <string name="Online_Payment">Online Payment</string>
+    <string name="select_referenceno">Select Reference No</string>
+    <string name="your_application_status">Your Application Details</string>
+    <string name="make_payment_now">Make Payment New</string>
+    <string name="search_online_payment">Search For Online Payment</string>
+    <string name="check_payment_details_before_payment">Check Your Payment Details Before Payment</string>
+    <string name="txt_tradesno">Trades No</string>
+    <string name="trade_fee">Trade Fee</string>
+    <string name="txt_penalty_amount">Penalty Amount</string>
+    <string name="payment_gateway_online">Payment Transactions</string>
+    <string name="procedtopay">Proceed To Pay</string>
+    <string name="transactioncost">Transaction Cost(RS.)(1.20% Per Transaction)</string>
+    <string name="demand_amount">Demand Amount(RS.) </string>
+    <string name="gst_tax">GST(RS.)(18.00% of Transaction Cost)</string>
+    <string name="bankcharges">Bank Charge(RS.)</string>
+    <string name="totalamount_paid">Total Amount To be Paid(RS.)</string>
+    <string name="payment_charges_choosebank"> Select Your Payment Option</string>
+    <string name="payment_choose_payment_type">Payment Type</string>
+    <string name="select_payment_type">Select Payment Type</string>
+    <string name="payment_choose_payment_banks">Payment Banks</string>
+    <string name="select_payment_bank">Select Payment Bank</string>
+    <string name="transaction_page">Transaction Page</string>
+
+    <string name="year">Year</string>
+    <string name="live_birth">Live Birth</string>
+    <string name="still_birth">Still Birth</string>
+    <string name="total">Total</string>
+    <string name="childname">ChildName</string>
+    <string name="dob">DOB</string>
+    <string name="sex">Sex</string>
+    <string name="year_wise">"Year Wise"</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="deathDate">DeathDate</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="certificate_type">Certificate Type</string>
+    <string name="english">English</string>
+    <string name="tamil">Tamil</string>
+    <string name="generate">Generate</string>
+    <string name="birth_details">Birth Details</string>
+    <string name="father_name">Father Name</string>
+    <string name="mother_name">Mother Name</string>
+    <string name="reg_date">Reg Date</string>
+    <string name="name_regdate">Name RegDate</string>
+    <string name="father_husband_name">Father / Husband Name</string>
+    <string name="date_of_death">Date of Death</string>
+    <string-array name="stepLabels_BirthRegistration">
+        <item><i>Personal Details</i></item>
+        <item><i>Place of Birth</i></item>
+        <item><i>Address</i> </item>
+
+    </string-array>
+    <string name="dohaveaccount"> Dont have an Account? </string>
+
+
+    <string name="newusernamehint">Enter Mobile Number / Email Id</string>
+
+    <string name="mobilehint">Mobile Number / Email Id </string>
+    <string name="forgotpassword">forgot password?</string>
+
+
+    <string name="usernamehint"> Mobile Number / Email Id / User Id </string>
+    <string name="passwordhint"> Password </string>
+    <string name="confirm_passwordhint">  Confirm Password </string>
+    <string name="verify_title"> Verification </string>
+    <string name="signin"> SIGN IN </string>
+    <string name="signup"> SIGN UP </string>
+    <string name="cancel"> Cancel </string>
+    <string name="password"> Password </string>
+    <string name="verify"> Verify </string>
+    <string name="Online_Payment_Building">Building Online Payment</string>
+    <string name="building_licence_fee">Building Licence Fee</string>
+    <string name="orderId">Order ID</string>
+    <string name="trackingId">Tracking Id</string>
+    <string name="bankReferenceNo">Bank Reference Id</string>
+    <string name="order_status">Order Status</string>
+    <string name="paymentMode">Payment Mode</string>
+    <string name="bankName">Bank Name</string>
+    <string name="statusMessage">Status Message</string>
+    <string name="amount">Amount</string>
+    <string name="home">Home</string>
+    <string name="toolbar_building_licence">Building Licence</string>
+    <string name="toolbar_grievances_Register">Grievance Register</string>
+    <string name="toolbar_grievances_Track">Grievances Track</string>
+    <string-array name="stepLabels">
+        <item><i>Personal Details</i></item>
+        <item><i>Address</i></item>
+        <item><i>Document </i></item>
+
+    </string-array>
+
+    <string name="no_record_found">No Record Found !</string>
+    <string name="application_status">Application Status</string>
+    <string name="application_verified">Application \n Verified</string>
+    <string name="final_n_verification">Final\n Verification</string>
+    <string name="know_your_application_status">Know Your Application Status</string>
+    <string name="reference_no">Reference No.</string>
+    <string name="search">Search</string>
+    <string name="application_processing">\tApplication \n \tProcessing</string>
+    <string name="site_visiting">Site Visiting</string>
+    <string name="license_issued">License Issued</string>
+    <string name="tTradename">TradeName\t</string>
+    <string name="tBuilding_type">Building Type\t</string>
+    <string name="tLicence_type">Licence Type\t</string>
+    <string name="tFinancial_year">Financial Year\t</string>
+    <string name="tLicence_validity">Licence Validity\t</string>
+    <string name="tName_of_establish">Name of Establish\t</string>
+    <string name="tTrade_amount">Trade Amount\t</string>
+    <string name="tAdvertisement_amount">Advertisement Amount\t</string>
+    <string name="tPenalty_amount">Penalty Amount\t</string>
+    <string name="tPfa_amount">PFA Amount\t</string>
+    <string name="tTotal_amount">Total Amount\t</string>
+    <string name="tPaid_rent">Paid Rent\t</string>
+    <string name="application_date">Application Date</string>
+    <string name="applicant_name">Applicant Name</string>
+    <string name="establishment_name">Establishment Name</string>
+    <string name="licence_validity">Licence Validity</string>
+    <string name="licence_no">Licence No.</string>
+    <string name="district_title">District</string>
+    <string name="panchayat_title">Panchayat</string>
+    <string name="searchcontact">Search Contact</string>
+
+    <!--ddd-->
+    <string name="tService_charge">Service Charge\t</string>
+    <string name="tMotor_installed">Motor Installed\t</string>
+    <string name="tTotal_motor_qty">Total Motor Qty\t</string>
+    <string name="tTotal_horsepower">Total HorsePower\t</string>
+    <!---->
+    <string name="title_view_receipt_history">View Receipt &amp; History  </string>
+    <string name="receipt">Receipt</string>
+    <string name="licence">Licence</string>
+
+    <string name="view">View</string>
+    <string name="title_view_query">Query Details</string>
+    <string name="referenceno">Reference No</string>
+    <string name="query">Query</string>
+    <string name="answer">Answer</string>
+    <string name="answer_date">Answer Date</string>
+    <string name="qa_status">QAStatus</string>
+    <string name="reply">Reply</string>
+    <string name="query_date">Query Date</string>
+    <string name="no_query_found">No Query Found</string>
+
+    <string name="toolbar_requestStatus">Know My Request Status</string>
+    <string name="toolbar_contactus">Contact us</string>
+    <string name="toolbar_applicationStatus">Application Status</string>
+    <string name="toobar_query">View Query</string>
+
+    <string name="renewal_year">Your renewal request of the year of :</string>
+    <string name="renewed">Your Licence has been Renewed for the Current and Next Financial Year</string>
+    <string name="ok">Ok</string>
+
+    <string name="date">Date</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="email_id">Email Id</string>
+    <string name="plot_area_sqft">Plot Area (sqft)</string>
+    <string name="building_type">Building Type</string>
+    <string name="cAppNo">Application No :  </string>
+    <string name="cStatus">Status : </string>
+    <string name="request_status">Request Status</string>
+    <string name="no_history_found">No History Found !</string>
+    <string name="trade_details">Trade Details</string>
+    <string name="no_data_found">No data found !</string>
+    <string name="machinespec">Machine Specifications Document *</string>
+    <string name="machineinstallation">Machine Installation Diagram *</string>
+    <string name="rentaldoc">Rental Agreement *</string>
+
+
+    <string-array name="stepLabels_License">
+        <item><i>Details of Applicant</i></item>
+        <item><i>Details of Trade Location</i></item>
+        <item><i>Details of Trade</i> </item>
+        <item><i>Details of Attachment</i> </item>
+
+    </string-array>
+
+    <string-array name="stepLabels_buildinglicense">
+        <item><i>Step 1</i></item>
+        <item><i>Step 2</i></item>
+        <item><i>Step 3</i> </item>
+
+    </string-array>
+
+    <string name="toolbar_licence_renewal">Licence Renewal</string>
+    <string name="refno">Reference Number</string>
+    <string name="appdetails">Application Details</string>
+    <string name="applicant_surname">Applicant Surname</string>
+    <string name="firstname">First Name</string>
+    <string name="relation_surname">Surname of Relation</string>
+    <string name="relationame">Relation Name</string>
+    <string name="streetname">Street Name </string>
+    <string name="cityname">City Name</string>
+    <string name="city">City</string>
+    <string name="pincode">Pincode</string>
+    <string name="aadhar_no">Aadhar Number</string>
+    <string name="gst">GST</string>
+    <string name="details_trade_loc">Details of Trade Location</string>
+    <string name="details_app">Details of Applicant</string>
+    <string name="licencefor">Licence For</string>
+    <string name="tradeamt">Trade Amount</string>
+    <string name="estname">Establishment Name</string>
+    <string name="if_motor">If Motor Installed</string>
+    <string name="check_motorused">Check motor\'s used for Trade</string>
+    <string name="machine_no">Number of Machine</string>
+    <string name="tot_horsepower">Total Horse Power</string>
+    <string name="trade_property">Trade Property Location Own/Rent</string>
+    <string name="rentel_agree">Have Rental Agreement Copy</string>
+    <string name="check_rental">Check you have Document</string>
+    <string name="rent_paid">Rent Paid</string>
+    <string name="doc_noc">Document N.O.C</string>
+    <string name="check_doc_noc">In case of combustible and inflammable materials like, timber/firewood Depots, crackers, etc, N.O.C. from Service Department shall be obtained.</string>
+    <string name="attach_details">Details of Attachment</string>
+    <string name="app_photo">Upload Applicant Photo</string>
+    <string name="address_proof">Applicant Address Proof</string>
+    <string name="rental_agree">Rental Agreement</string>
+    <string name="noc_doc">N.O.C Document</string>
+    <string name="prop_tax">Property Tax Receipt (Latest)</string>
+
+    <string name="obpadate">OBPA Date</string>
+    <string name="licencefee">Licence Fee</string>
+    <string name="developmentcharge">Development Charge</string>
+    <string name="vancantLandTax">VacantLandTax</string>
+    <string name="totalbl">Total BL</string>
+    <string name="appname">Applicant Name</string>
+    <string name="email">Email ID</string>
+    <string name="contactno">Contact No</string>
+    <string name="lastname">Last Name</string>
+    <string name="address">Address</string>
+    <string name="otp">Enter Otp</string>
+    <string name="req_no">Request No</string>
+    <string name="or">(or)</string>
+    <string name="building_plan">Building Plan</string>
+    <string name="completed_request">Completed Request</string>
+    <string name="tax">Tax</string>
+    <string name="kindly_upload">Kindly upload all the documents in JPG and PNG format only.</string>
+    <string name="building_plan_copy">Building Plan Copy.</string>
+    <string name="attessted">Attested Copies Of Property Documents.</string>
+    <string name="patta">Patta Certificate.</string>
+    <string name="registered_doc">Registered Document.(EC up to date).</string>
+    <string name="photo_prop">Photo of Property With Holder.</string>
+    <string name="photo_of_assessment">Photo Of Assessment. *</string>
+    <string name="encum_certi">Encumbrance Certificate.</string>
+    <string name="sanctioned">Sanctioned sub-division/layout copy if any.</string>
+    <string name="sanctioned_demo">Sanctioned demolition plan copy if any.</string>
+    <string name="will_doc">Will document and probated order copy if any.</string>
+    <string name="present_owner">Present ownership / General Power of Attorney (GPA) document copy.</string>
+    <string name="reconstitute">Reconstitution Deed if any required.</string>
+    <string name="heir_ship">Legal Heir Ship Certificate / Death Certificate if any.</string>
+    <string name="land_tax">Land Tax Receipt. (up to current half-yearly)</string>
+    <string name="existing">Existing Sanctioned Permit and Plan Copy if any.</string>
+    <string name="noc">NOC (road crosses any channel/canal,etc).</string>
+    <string name="reset">Reset</string>
+    <string name="assessment_details">Assessment Details</string>
+    <string name="bal_history">Balance History</string>
+    <string name="half_year">Half Year</string>
+    <string name="balance">Balance</string>
+    <string name="death_reg">Death Registration</string>
+    <string name="etown_login">ETOWNS LOGIN</string>
+    <string name="grievance_type">Grievance Type</string>
+    <string name="grievance_others">Grievance Others</string>
+    <string name="grievance_desc">Grievance Description</string>
+    <string name="max_char">* Max of 500 characters</string>
+    <string name="griev_no">Grievances No</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="app_no">Application No: 411</string>
+    <string name="app_date">Application Date : 25/04/2018</string>
+    <string name="fin_year_str">Fin Year : 2018-2019</string>
+    <string name="lic_val">Licence Validity : 2018-2019</string>
+    <string name="trade_no">Traders No : 11</string>
+    <string name="lic_no">Licence No : 10</string>
+    <string name="ex_applicant_name">Applicant Name : Sairam</string>
+    <string name="ex_est_name">Establishment : Testing Shop</string>
+    <string name="ex_district">District : Krishnagiri</string>
+    <string name="ex_panchayat">Panchayat : Mathigiri</string>
+    <string name="ex_sts">Status : Processsed :</string>
+    <string name="renewal">Renewal</string>
+    <string name="building_licence">Building Licence</string>
+    <string name="new_licence">New License Registration</string>
+    <string name="assessment_type">Assessment Type</string>
+    <string name="individual">Individual</string>
+    <string name="group">Group</string>
+    <string name="org_name_">Organisation Name :</string>
+    <string name="action_profile">Profile</string>
+
+
+    <string name="financialYear">FinancialYear</string>
+    <string name="term">Term</string>
+    <string name="all">All</string>
+
+    <string name="mobile_no_email_id">Mobile No / Email Id</string>
+    <string name="sending_otp_sentence">Please enter your registered mobile number / email Id and we will send an OTP</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="didn_t_receive_otp">Didn\'t receive OTP ?\t</string>
+    <string name="send_again">Send again</string>
+    <string name="please_enter_the_otp_that_has_been_sent_to_your_mobile_number_email">Please enter the OTP that has been sent to your Mobile Number / Email Id</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="assessment_list_title">Assessment List</string>
+    <string name="clickHereToAdd">Click here to add Assessment</string>
+
+    <string name="selectTerm_title">Please select the terms to Pay</string>
+    <string name="choose_payment">Choose payment mode</string>
+    <string name="confirm">Confirm</string>
+    <string name="totalDemandSelected">Total demand selected</string>
+    <string name="charges">Charges</string>
+    <string name="button_qp_clear">Reset</string>
+
+    <string name="totalDemandAmount">Total demand amount</string>
+    <string name="penalty">Penalty</string>
+    <string name="transactionCost">Transaction cost</string>
+    <string name="serviceCharge">GST </string>
+    <string name="bankCharge">Bank charge</string>
+    <string name="chooseTaxType">Choose your tax type</string>
+    <string name="chooseAssessment">Select your Assessment</string>
+
+    <string name="assessmentNo">Assessment Number :</string>
+    <string name="propertyTax">Property Tax</string>
+
+
+    <string name="pay">Submit</string>
+    <string name="proceed">Proceed to Pay</string>
+    <string name="delete">Delete</string>
+    <string name="appversion">App version : 3.6</string>
+
+
+    <string name="tax_calculator">Tax Calculator</string>
+    <string name="assessment_search">Assessment Search</string>
+    <string name="track_new_assessment">Track New Assessment</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="track_new_connection">Track New Connection</string>
+    <string name="newapplication">New Application</string>
+    <string name="know_your_request_status">Know My Request Status</string>
+    <string name="license_renewal">Licence Renewal</string>
+    <string name="view_query">View Query</string>
+
+    <string-array name="bankName">
+        <item>--- Payment Mode ---</item>
+        <item>CreditCard</item>
+        <item>DebitCard</item>
+        <item>NetBanking</item>
+        <item>CashCard</item>
+        <item>MobilePayment</item>
+        <item>Wallet</item>
+    </string-array>
+
+
+    <string name="title_received">Received</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_pending">Pendings</string>
+    <string name="title_complete">Completed</string>
+</resources>

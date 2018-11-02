@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cd_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:elevation="@dimen/dimen_5dp"
+        app:cardCornerRadius="@dimen/dimen_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bp_incomp_tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="serif"
+                android:text="Name  :  V.Vediyappan"
+                android:textColor="@color/blackForText"
+                android:textSize="@dimen/dimen_14sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/bp_incomp_tv_father_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif"
+                android:text="Father Name : tyjig"
+                android:textColor="@color/blackForText"
+                android:textSize="@dimen/dimen_12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/bp_incomp_tv_mobileno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif"
+                android:text="Mobile No. : 9344489998	"
+                android:textColor="@color/blackForText"
+                android:textSize="@dimen/dimen_12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/bp_incomp_tv_emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif"
+                android:text="Email-Id : vedi115@gmail.com		"
+                android:textColor="@color/blackForText"
+                android:textSize="@dimen/dimen_12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/bp_incmp_tv_plot_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif"
+                android:text="Plot Area Sqft : 545454.00		"
+                android:textColor="@color/blackForText"
+                android:textSize="@dimen/dimen_12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/bp_incmp_tv_buildingtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif"
+                android:text="Building Type	 : Mixed Residential	"
+                android:textColor="@color/blackForText"
+                android:textSize="@dimen/dimen_12sp"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/bp_incmp_tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif"
+                android:text="Status : New	"
+                android:textColor="@color/blackForText"
+                android:textSize="@dimen/dimen_12sp"
+                android:textStyle="italic" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eceded"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bp_incmp_tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Date : 24/08/2018	"
+                    android:textColor="@color/blackForText"
+                    android:textSize="@dimen/dimen_12sp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/bp_incmp_tv_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_double_chevron_right"
+                    android:gravity="end|center"
+                    android:text="Click to Complete"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#4158b6"
+                    android:textSize="@dimen/dimen_12sp"
+                    android:textStyle="bold|italic"
+                    android:drawableRight="@drawable/ic_double_chevron_right" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/cd_details"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="-25dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_grey"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bp_incmp_tv_app_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="serif"
+                android:textSize="@dimen/dimen_12sp"
+                android:text="Application No : OBPA/1123714/2018"
+                android:textColor="@color/buttonBackgroundColor"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

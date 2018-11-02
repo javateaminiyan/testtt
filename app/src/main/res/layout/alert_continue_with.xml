@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cancel_rounded"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        android:layout_gravity="end|top"
+        android:scaleType="fitXY"
+        android:id="@+id/fp_alert_cancel"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:orientation="vertical"
+        android:id="@+id/alert_root_layout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Choose the delivery method for sending OTP "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/dimen_16dp"
+        android:textStyle="italic|bold"
+        android:layout_margin="@dimen/dimen_8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawableStart="@drawable/ic_phone"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center|start"
+        android:text="****9987439"
+        android:textSize="@dimen/dimen_16dp"
+        android:textStyle="italic|bold"
+        android:drawablePadding="5dp"
+        android:id="@+id/alert_tv_mobile"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableLeft="@drawable/ic_mail"
+        android:drawableStart="@drawable/ic_mail"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center|start"
+        android:text="******@gmail.com"
+        android:textSize="@dimen/dimen_16dp"
+        android:textStyle="italic|bold"
+        android:drawablePadding="5dp"
+        android:id="@+id/alert_tv_email"/>
+
+    <TextView
+        android:id="@+id/fp_alert_tv_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textAlignment="viewEnd"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textStyle="bold|italic"
+        android:padding="@dimen/dimen_5dp"
+        android:textColor="@color/rose"/>
+
+    </LinearLayout>
+</FrameLayout>

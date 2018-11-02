@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rootlayout"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_bar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/prematix"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dimen_20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hosur_office"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:text="@string/hosur_company_address"
+                android:padding="@dimen/dimen_5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_call"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:text="@string/hosur_company_landline"
+                android:padding="@dimen/dimen_5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableLeft="@drawable/ic_mobile"
+                android:text="@string/hosur_company_mobile"
+                android:padding="@dimen/dimen_5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableLeft="@drawable/ic_mail"
+                android:text="@string/hosur_company_email"
+                android:padding="@dimen/dimen_5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:text="@string/blr_office"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:text="@string/blr_company_address"
+                android:padding="@dimen/dimen_5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_call"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:text="@string/blr_company_landline"
+                android:padding="@dimen/dimen_5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableLeft="@drawable/ic_mail"
+                android:text="@string/blr_company_email"
+                android:padding="@dimen/dimen_5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/rootlayout">
+    <RelativeLayout
+        android:id="@+id/relativetoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+            </android.support.v7.widget.Toolbar>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/relativetoolbar"
+        android:layout_marginTop="-74dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                style="@style/AppTheme"
+                android:layout_margin="@dimen/dimen_2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_8dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/ba_et_district_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/grey">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/ba_et_district"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_8dp"
+                            android:enabled="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="@string/district"
+                            android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:inputType="textNoSuggestions"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/fragment_body_text_size"
+                            android:gravity="start" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/ba_et_panchayat_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/grey">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/ba_et_panchayat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_8dp"
+                            android:enabled="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="@string/panchayat"
+                            android:inputType="textNoSuggestions"
+                            android:padding="@dimen/dimen_8dp"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/fragment_body_text_size"
+                           android:gravity="start" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dimen_8dp">
+
+                        <Button
+                            style="@style/Widget.AppCompat.ButtonBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_8dp"
+                            android:background="@color/buttonBackgroundColor"
+                            android:fontFamily="@font/roboto_medium"
+                            android:onClick="Submit"
+                            android:text="@string/submit"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fragment_body_text_size"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/ba_tv_title_change"
+                style="@style/TextAppearance.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ba_cd_first_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_5dp">
+
+                    <TextView
+                        android:id="@+id/bcs_tv_first_Column_title"
+                        style="@style/TextAppearance.TableTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="@string/year"/>
+
+                    <TextView
+                        android:id="@+id/ba_tv_t1_col2"
+                        style="@style/TextAppearance.TableTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="@string/live_birth" />
+
+                    <TextView
+                        android:id="@+id/ba_tv_t1_col3"
+                        style="@style/TextAppearance.TableTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="@string/still_birth"/>
+
+                    <TextView
+                        style="@style/TextAppearance.TableTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="@string/total" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ba_cd_first_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/ba_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:layoutAnimation="@anim/anim_layout_left_to_right">
+
+                </android.support.v7.widget.RecyclerView>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/bcs_cd_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_5dp">
+
+                    <TextView
+                        style="@style/TextAppearance.TableTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="@string/total"/>
+
+                    <TextView
+                        android:id="@+id/bcs_tv_live_birth"
+                        style="@style/TextAppearance.TableTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/bcs_tv_still_birth"
+                        style="@style/TextAppearance.TableTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/bcs_tv_total"
+                        style="@style/TextAppearance.TableTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ba_cd_birthdetails_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_4dp"
+                    android:layout_marginStart="@dimen/dimen_4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5.5">
+
+
+                    <TextView
+                        style="@style/TextAppearance.TableTitle"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="@string/reg_date" />
+
+                    <View
+                        android:layout_width="@dimen/dimen_1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey" />
+
+                    <TextView
+                        android:id="@+id/ba_tv_t2_col2"
+                        style="@style/TextAppearance.TableTitle"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="@string/childname" />
+
+                    <View
+                        android:layout_width="@dimen/dimen_1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey" />
+
+                    <TextView
+                        android:id="@+id/ba_tv_t2_col3"
+                        style="@style/TextAppearance.TableTitle"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="@string/dob"/>
+
+                    <View
+                        android:layout_width="@dimen/dimen_1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey"/>
+
+                    <TextView
+                        style="@style/TextAppearance.TableTitle"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="@string/sex" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ba_cd_birthdetails_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/ba_birth_details_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutAnimation="@anim/anim_layout_left_to_right">
+
+                </android.support.v7.widget.RecyclerView>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

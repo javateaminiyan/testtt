@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.examp.three">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="icon, label">
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/splashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.RootNavigation"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shared_Modules.Shared_Common_All_Tax.TrackNewAssessmentNo"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shared_Modules.Shared_Common_All_Tax.ViewDcb"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Property.PaidHistory"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shared_Modules.Shared_Common_All_Tax.Shared_PaymentHistory"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shared_Modules.Shared_Common_All_Tax.Shared_AssessmentSearch"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Property.AssessmentSearch"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WaterTax.Water_AssessmentSearch_Activity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shared_Modules.Shared_Common_All_Tax.ViewTracking"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shared_Modules.Shared_Common_All_Tax.MakePayment"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Property.NameTransfer"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shared_Modules.Shared_Common_All_Tax.NewAssessment_Activity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Building.BP_InComplete_Activity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Profession.OnlineFiling"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Building.NewApplicationActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Profession.TrackOnlineFiling"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Profession.ViewOnlineFilingTracking"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Birth_Modules.BirthRegistration_Activity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Birth_Modules.TrackBirthRegistration_Activity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Death_Modules.TrackDeathRegistration_Activity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Death_Modules.DeathRegistration_Activity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shared_Modules.Shared_Birth_Death.BirthCertificateSearch_Activity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.Shared_Modules.Shared_Birth_Death.BirthAbstract_Activity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.NonTax.NewAssessment"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Grievances.Grievances_Registration"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.Grievances.Grievances_Track"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ContactUs"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Property.PropertyTaxCalculator_Activity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <!-- Broadcast receiver declaration in manifest file and make sure to enable it -->
+        <receiver
+            android:name=".Network_Connection_BroadCast.InternetConnector_Receiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activity.QuickPay.PaymentInstantActivity"
+            android:parentActivityName=".activity.QuickPay.QuickPayActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.Building.BuildingOnlinePayment"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Building.Building_Completed_Request"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Building.BP_AppRequestStatus_Activity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.Trade.TL_ApplicationStatus_Activity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Trade.ContactUsActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Trade.TL_ViewReceipt_History_Activity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Trade.TL_QueryDetails_Activity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Trade.SaveLicenceRenewal"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Trade.LisenceRenewal"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Trade.TL_InComplete_Activity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Trade.NewRegister_Activity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Trade.OnlinePayment"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.forgotpassword.ForgotPasswordActivity"
+            android:configChanges="orientation"
+            android:parentActivityName=".Etown_Login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.Trade.PaymentGateway_OnlinePayment"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Building.ChecklistDetails"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Profile.Profile"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Etown_Login"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.paymentgateway.activity.StatusActivity" />
+        <activity
+            android:name=".activity.paymentgateway.activity.WebViewActivity"
+            android:parentActivityName=".activity.Trade.PaymentGateway_OnlinePayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shared_Modules.Shared_Common_All_Tax.CheckDemandActivity"
+            android:parentActivityName=".activity.Shared_Modules.Shared_Common_All_Tax.MakePayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shared_Modules.Shared_Common_All_Tax.AddAssessmentActivity"
+            android:parentActivityName=".activity.Shared_Modules.Shared_Common_All_Tax.MakePayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shared_Modules.Shared_Common_All_Tax.DeleteAssessmentActivity"
+            android:parentActivityName=".activity.Shared_Modules.Shared_Common_All_Tax.MakePayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuickPay.QuickPayActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewNavigation"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service android:name=".notification.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".notification.FirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@style/GrievanceAdminTheme"
+            android:name=".activity.Grievance_admin.GrievanceAdminActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

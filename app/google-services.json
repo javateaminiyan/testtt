@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "251327264890",
+    "firebase_url": "https://etownpublic.firebaseio.com",
+    "project_id": "etownpublic",
+    "storage_bucket": "etownpublic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251327264890:android:cc486c1881937a32",
+        "android_client_info": {
+          "package_name": "com.examp.three"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251327264890-mhfe86jlgdd2q2gfhc898nie63dm7knj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.examp.three",
+            "certificate_hash": "4ec0ebe09f08a1d2c5d190524cc8da872705da32"
+          }
+        },
+        {
+          "client_id": "251327264890-qn88kvon4mvvlddami8n339pbmr2dnc5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAURpxpUsfp8ka6uyH0nAX-v69oSle0dZQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251327264890-qn88kvon4mvvlddami8n339pbmr2dnc5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

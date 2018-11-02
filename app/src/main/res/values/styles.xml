@@ -1,0 +1,213 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+
+    </style>
+
+    <!---->
+    <!--<item name="android:windowIsTranslucent">true</item>-->
+
+
+    <style name="NavTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">#fcf7f7</item>
+    </style>
+
+
+
+    <!-- Base application theme. -->
+    <style name="GrievanceAdminTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="splashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">#fcf7f7</item>
+    </style>
+
+
+    <style name="Toolbar_18sp" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_font_18sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+   </style>
+
+
+
+
+    <style name="TextAppearance.TitleFont" parent="android:TextAppearance">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fragment_header_text_size</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="ToolbarSubtitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fragment_header_text_size</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+
+
+
+    <style name="TextAppearance.TaxCalculator" parent="android:TextAppearance">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fragment_body_text_size</item>
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">viewStart</item>
+        <item name="android:layout_gravity">center|start</item>
+        <item name="android:gravity">center|start</item>
+
+    </style>
+
+    <style name="TextAppearance.Body" parent="android:TextAppearance">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fragment_body_text_size</item>
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">viewStart</item>
+        <item name="android:layout_gravity">center|start</item>
+        <item name="android:gravity">center|start</item>
+
+    </style>
+
+    <style name="TextAppearance.TableTitle" parent="android:TextAppearance">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/table_title_text_size</item>
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">viewStart</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">start</item>
+
+    </style>
+
+    <style name="TextAppearance.TableTotal" parent="android:TextAppearance">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/table_title_text_size</item>
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">viewStart</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+    <style name="TextAppearance.TableBodyContents" parent="android:TextAppearance">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/table_title_text_size</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">viewStart</item>
+        <item name="android:layout_gravity">center|start</item>
+        <item name="android:gravity">center|start</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+
+    </style>
+
+    <style name="TextAppearance.TableBody" parent="android:TextAppearance">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/table_title_text_size</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">viewStart</item>
+        <item name="android:layout_gravity">center|start</item>
+        <item name="android:gravity">center|start</item>
+
+
+    </style>
+
+
+
+    <style name="TextAppearance.TLBodyTitle" parent="android:TextAppearance">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/blackForText</item>
+        <item name="android:textStyle">italic</item>
+
+    </style>
+
+    <style name="TextAppearance.TLBodyText" parent="android:TextAppearance">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/blackForText</item>
+        <item name="android:textStyle">italic|bold</item>
+
+    </style>
+
+    <!--
+        <style name="DialogAnimations" />
+    -->
+    <style name="ToolbarTitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/title_font</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <!-- include other attributes you want to change: textColor, textStyle, etc -->
+    </style>
+
+    <style name="DialogAnimations.SmileWindow">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_top</item>
+    </style>
+    <style name="pCheckBox" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">@color/pPurple</item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">@color/pPurple</item> <!-- activated color change as you wish -->
+        <item name="android:textColor">#FFFF3F3C</item> <!-- checkbox text color -->
+    </style>
+
+    <style name="sTIEditText" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:focusable">false</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="sTextView" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="sTextView14" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+
+
+
+
+
+</resources>

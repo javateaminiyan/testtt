@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.examp.three.activity.Shared_Modules.Shared_Common_All_Tax.AddAssessmentActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:scrollbars="none"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@color/property"
+                android:padding="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="18dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:textColor="@color/white"
+                android:text="Property Tax"/>
+
+            <EditText
+                android:layout_below="@+id/title"
+                android:id="@+id/et_District"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:focusable="false"
+                android:hint="Select District"
+                android:fontFamily="@font/roboto_medium"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/spinner_margin_top" />
+
+            <EditText
+                android:id="@+id/et_Panchayat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:focusable="false"
+                android:hint="Select Panchayat"
+                android:fontFamily="@font/roboto_medium"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:layout_below="@+id/et_District"
+                android:layout_marginTop="@dimen/spinner_margin_top" />
+
+            <EditText
+                android:id="@+id/editText_AssessmentNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/et_Panchayat"
+                android:layout_marginTop="@dimen/editText_margin_top"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="@string/assessmentNumber"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/buttonCheck"
+                android:layout_width="120dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editText_AssessmentNo"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/submit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textView_margin_top"
+                android:text="@string/name"
+                android:id="@+id/textViewName"
+                android:layout_below="@+id/buttonCheck"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/textViewNameVal"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_alignTop="@+id/textViewName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wardNum"
+                android:id="@+id/textViewWardNo"
+                android:layout_marginTop="@dimen/textView_margin_top"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_below="@+id/textViewName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewWardNoVal"
+                android:layout_alignTop="@+id/textViewWardNo"
+                android:layout_alignLeft="@+id/textViewNameVal"
+                android:layout_alignStart="@+id/textViewNameVal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doorNum"
+                android:fontFamily="@font/roboto_medium"
+                android:id="@+id/textViewDoorNo"
+                android:layout_marginTop="@dimen/textView_margin_top"
+                android:layout_below="@+id/textViewWardNo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDoorNoVal"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_alignTop="@+id/textViewDoorNo"
+                android:layout_alignLeft="@+id/textViewWardNoVal"
+                android:layout_alignStart="@+id/textViewWardNoVal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/streetName"
+                android:fontFamily="@font/roboto_medium"
+                android:id="@+id/textViewStreetName"
+                android:layout_marginTop="@dimen/textView_margin_top"
+                android:layout_below="@+id/textViewDoorNo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewStreetVal"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_alignTop="@+id/textViewStreetName"
+                android:layout_alignLeft="@+id/textViewDoorNoVal"
+                android:layout_alignStart="@+id/textViewDoorNoVal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/add"
+                android:id="@+id/buttonAdd"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_below="@+id/textViewStreetName"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/dimen_2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/button_qp_clear"
+                android:id="@+id/button_clear"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:background="@color/colorPrimary"
+                android:layout_alignTop="@+id/buttonCheck"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    </RelativeLayout>
+</LinearLayout>

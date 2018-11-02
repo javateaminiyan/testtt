@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:id="@+id/rootLayout"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="@dimen/dimen_8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/custom_vertical_margin"
+                    android:paddingLeft="@dimen/custom_horizontal_margin"
+                    android:paddingTop="@dimen/custom_vertical_margin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textView_district"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="District : Krishnagiri" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView_panchayat"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_light"                            android:text="Panchayat : Mathigiri" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView_assessmentNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/roboto_light"                        android:text="Assessessment No : 34 " />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:background="@color/white"
+                android:elevation="@dimen/dimen_8dp"
+                android:padding="@dimen/dimen_5dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/custom_vertical_margin"
+                android:paddingLeft="@dimen/custom_horizontal_margin"
+                android:paddingRight="@dimen/custom_horizontal_margin"
+                android:paddingTop="@dimen/custom_vertical_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_light"                    android:textColor="@color/title_qp_textcolor"
+                    android:text="@string/selectTerm_title" />
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_title"
+                    android:layout_marginTop="@dimen/layout_margintemp"
+                    android:paddingTop="@dimen/activity_vertical_margin">
+                    <HorizontalScrollView
+                        android:id="@+id/horizontalScrollView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" >
+                        <TableLayout
+                            android:id="@+id/tableLayout_term"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableRow
+                                android:id="@+id/tableRow_termTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TableRow>
+
+                        </TableLayout>
+                    </HorizontalScrollView>
+                    <TextView
+                        android:id="@+id/seperator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/horizontalScrollView1"
+                        android:background="@color/Chocolate" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seperator"
+                        android:layout_marginTop="@dimen/textView_margin_top"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/totalDemandSelected"
+                        android:id="@+id/textView25" />
+
+                    <TextView
+                        android:id="@+id/textView_totalDemand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:layout_marginLeft="64dp"
+                        android:layout_marginStart="64dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:layout_alignTop="@+id/textView25"
+                        android:layout_toRightOf="@+id/textView25"
+                        android:layout_toEndOf="@+id/textView25" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    android:paddingBottom="@dimen/custom_vertical_margin"
+                    android:paddingLeft="@dimen/custom_horizontal_margin"
+                    android:paddingRight="@dimen/custom_horizontal_margin"
+                    android:paddingTop="@dimen/custom_vertical_margin">
+                <TextView
+                    android:id="@+id/choose_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_margin_top"
+                    android:text="@string/choose_payment"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/title_qp_textcolor"
+                    android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center_vertical"
+                            android:text="@string/payment_choose_payment_type"
+                            android:textSize="14sp" />
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_payment_type"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_light"
+                            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:focusable="false"
+                            android:hint="@string/select_payment_type"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/roboto_light"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/payment_choose_payment_banks"
+                            android:textSize="14sp" />
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_payment_banks"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_light"
+                            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:focusable="false"
+                            android:hint="@string/select_payment_bank"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:background="@color/white"
+                android:elevation="@dimen/dimen_8dp"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:padding="@dimen/dimen_5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinner_bankName"
+                        android:paddingBottom="@dimen/custom_vertical_margin"
+                        android:paddingLeft="@dimen/custom_horizontal_margin"
+                        android:paddingRight="@dimen/custom_horizontal_margin"
+                        android:paddingTop="@dimen/custom_vertical_margin">
+
+                        <TextView
+                            android:id="@+id/textView_charges_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:text="@string/charges"
+                            android:fontFamily="@font/roboto_light"
+                            android:textColor="@color/title_qp_textcolor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewSeparator"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/separator"
+                            android:layout_below="@+id/textView_charges_title"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/roboto_light"                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:background="@color/Chocolate" />
+
+                        <TextView
+                            android:id="@+id/textViewPenalty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"                            android:layout_below="@+id/textViewSeparator"
+                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:text="@string/penalty" />
+
+                        <TextView
+                            android:id="@+id/textView_penalty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:fontFamily="@font/roboto_light"                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/textViewSeparator"
+                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:text="0.00" />
+
+                        <TextView
+                            android:id="@+id/textViewTotalDemandwithPenalty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textViewPenalty"
+                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:text="@string/totalDemandAmount" />
+
+                        <TextView
+                            android:id="@+id/textView_totalDemand_withPenalty"
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/roboto_light"                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/textView_penalty"
+                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:text="0.00" />
+
+                        <TextView
+                            android:id="@+id/textViewTransCost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/roboto_light"                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textViewTotalDemandwithPenalty"
+                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:text="@string/transactionCost" />
+
+                        <TextView
+                            android:id="@+id/textView_Transaction_Cost"
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/roboto_light"                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/textView_totalDemand_withPenalty"
+                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:text="0.00" />
+
+                        <TextView
+                            android:id="@+id/textViewService"
+                            android:fontFamily="@font/roboto_light"                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textViewTransCost"
+                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:text="@string/serviceCharge" />
+
+                        <TextView
+                            android:id="@+id/textView_service_charge"
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/roboto_light"                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/textView_Transaction_Cost"
+                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:text="0.00" />
+
+                        <TextView
+                            android:id="@+id/textViewBankCharge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textViewService"
+                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:text="@string/bankCharge" />
+
+                        <TextView
+                            android:id="@+id/textView_bank_charges"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/textView_service_charge"
+                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:text="0.00" />
+
+                        <TextView
+                            android:id="@+id/textViewSeparator2"
+                            android:layout_width="match_parent"
+                            android:fontFamily="@font/roboto_light"                            android:layout_height="@dimen/separator"
+                            android:layout_below="@+id/textView_bank_charges"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:background="@color/Chocolate" />
+
+                        <TextView
+                            android:id="@+id/textViewTotalAmt"
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/roboto_light"                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textViewSeparator2"
+                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:text="@string/total"
+                            android:textColor="@color/title_qp_textcolor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView_totalAmt_tobe_paid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/textViewSeparator2"
+                            android:layout_marginTop="@dimen/textView_margin_top"
+                            android:text="0.00"
+                            android:fontFamily="@font/roboto_light"                            android:textColor="@color/title_qp_textcolor"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+                    <Button
+                        android:id="@+id/button_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_below="@+id/relativeLayout1"
+                        android:layout_marginTop="@dimen/button_margin_top"
+                        android:onClick="payment"
+                        android:text="@string/pay"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto_light"                        android:layout_marginRight="@dimen/dimen_3dp"
+                        android:layout_marginLeft="@dimen/dimen_3dp"
+                        android:layout_marginBottom="@dimen/dimen_8dp"
+                        android:background="@color/colorAccent"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

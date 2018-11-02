@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/li_parent_lay"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Details of Trade Location"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:hint="District *"
+                        android:focusable="false"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:id="@+id/et_district"
+                        android:inputType="text"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/fragment_body_text_size"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:hint="Town Panchayat *"
+                        android:focusable="false"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:id="@+id/et_town_panchayat"
+                        android:inputType="text"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/fragment_body_text_size"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:hint="Ward No *"
+                        android:focusable="false"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:id="@+id/et_ward_no"
+                        android:inputType="text"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/fragment_body_text_size"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:hint="Street Name *"
+                        android:focusable="false"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:id="@+id/et_street_name"
+                        android:inputType="text"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/fragment_body_text_size"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:hint="Door No *"
+                        android:id="@+id/et_doorno"
+                        android:inputType="phone"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/fragment_body_text_size"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:hint="License For *"
+                        android:focusable="false"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:id="@+id/et_license_for"
+                        android:inputType="text"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/fragment_body_text_size"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#cc3300"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Back"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fragment_body_text_size"
+                android:textStyle="bold" />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_next_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#009933"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Next"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fragment_body_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

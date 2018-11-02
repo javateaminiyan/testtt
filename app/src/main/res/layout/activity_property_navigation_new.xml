@@ -1,0 +1,2189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/roboto_medium"
+            app:title="Assessment Request"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:titleTextColor="@color/white" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/llbirth_details">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_assessment_req"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="14dp"
+                    android:layerType="software"
+                    android:background="@drawable/dash_line_divider_vertical"/>
+
+                <View
+                    android:layout_width="54dp"
+                    android:layout_height="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layerType="software"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginLeft="-15dp"
+                    android:background="@drawable/dash_line_divider_horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:id="@+id/llapply_birth_registration"
+                    android:background="@drawable/text_background_new">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dimen_14sp"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/Birth_apply_registration"
+                        android:padding="@dimen/dimen_10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="14dp"
+                    android:layerType="software"
+                    android:background="@drawable/dash_line_divider_vertical"/>
+
+                <View
+                    android:layout_width="54dp"
+                    android:layout_height="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layerType="software"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginLeft="-15dp"
+                    android:background="@drawable/dash_line_divider_horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:id="@+id/llbirth_abstract"
+                    android:background="@drawable/text_background_new">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dimen_14sp"
+                        android:text="@string/Birth_abstract"
+                        android:fontFamily="@font/roboto_light"
+                        android:padding="@dimen/dimen_10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="14dp"
+                    android:layerType="software"
+                    android:background="@drawable/dash_line_divider_vertical"/>
+
+                <View
+                    android:layout_width="54dp"
+                    android:layout_height="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layerType="software"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginLeft="-15dp"
+                    android:background="@drawable/dash_line_divider_horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:id="@+id/llbirth_certificate_search"
+                    android:background="@drawable/text_background_new">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dimen_14sp"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/Birth_certificate_search"
+                        android:padding="@dimen/dimen_10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="26dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="14dp"
+                    android:layerType="software"
+                    android:background="@drawable/dash_line_divider_vertical"/>
+
+                <View
+                    android:layout_width="54dp"
+                    android:layout_height="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layerType="software"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="-15dp"
+                    android:background="@drawable/dash_line_divider_horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:id="@+id/lltrack_birth_registration"
+                    android:background="@drawable/text_background_new">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dimen_14sp"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/Birth_track_registration"
+                        android:padding="@dimen/dimen_10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/lldeath_details"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_assessment_search"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llapply_death_registration"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.75"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/Death_apply_death_registration"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/lldeath_abstract"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:text="@string/Death_track_abstract"
+                            android:fontFamily="@font/roboto_light"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/lldeath_certificate_search"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2.75"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/Death_death_certificate_search"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/lltrack_death_registration"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:layout_weight="2.75"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/Death_track_death_registration"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/llproperty_tax"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_payment_history_new"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llproperty_new_assessment"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/New_Assessment"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llproperty_tax_calculator"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/tax_calculator"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llproperty_assessment_search"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/assessment_search"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llproperty_name_transfer"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/property_name_transfer"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llproperty_payment_history"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/paidhistory"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llproperty_view_dcb"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:text="@string/toolbar_viewdcb"
+                            android:fontFamily="@font/roboto_light"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llproperty_track_new_assessment"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/track_new_assessment"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="24dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llproperty_make_payment"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/make_payment"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/llprofession_tax"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_payment_history_new"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llprofession_new_assessment"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/New_Assessment"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llprofession_assessment_search"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/assessment_search"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llprofession_payment_history"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/toolbar_property_payment_history"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llprofession_view_dcb"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:text="@string/toolbar_viewdcb"
+                            android:fontFamily="@font/roboto_light"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llprofession_track_new_assessment"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/track_new_assessment"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llprofession_make_payment"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:text="@string/make_payment"
+                            android:fontFamily="@font/roboto_light"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llprofession_online_filing"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/profession_online_filing"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="24dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llprofession_track_online_filing"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/track_online_filing"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:id="@+id/llwater_tax"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_view_dcb_new"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llwater_new_connection"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/water_title_newconnection"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llwater_connection_search"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/water_title_searchconnection"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llwater_payment_history"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/toolbar_property_payment_history"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llwater_view_dcb"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:text="@string/toolbar_viewdcb"
+                            android:fontFamily="@font/roboto_light"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llwater_track_new_connection"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/track_new_connection"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llwater_make_payment"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/make_payment"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:id="@+id/llnon_tax"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_grievances"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llnontax_new_assessment"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/New_Assessment"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llnontax_assessment_search"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/assessment_search"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llnontax_payment_history"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/toolbar_property_payment_history"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llnontax_view_dcb"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/toolbar_viewdcb"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llnontax_track_new_assessment"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/track_new_assessment"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llnontax_make_payment"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/make_payment"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:id="@+id/llgrievances"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_grievances"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llgrievances_register"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/grievances_register"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llgrievances_track"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/track_grievances"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:id="@+id/llbuilding_license"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_grievances"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llbuilding_new_application"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/newapplication"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llbuilding_know_my_req_status"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/know_your_request_status"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llbuilding_completed_request"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/completed_request"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/llbuilding_online_payment"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/Online_Payment"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:id="@+id/lltrade_license"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_grievances"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/lltrade_new_application"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/newapplication"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/lltrade_license_renewal"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/license_renewal"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/lltrade_application_status"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/application_status"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/lltrade_view_receipt_history"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/title_view_receipt_history"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/lltrade_view_query"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:text="@string/view_query"
+                            android:fontFamily="@font/roboto_light"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/lltrade_contact_us"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:text="@string/toolbar_contactus"
+                            android:fontFamily="@font/roboto_light"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="14dp"
+                        android:layerType="software"
+                        android:background="@drawable/dash_line_divider_vertical"/>
+
+                    <View
+                        android:layout_width="54dp"
+                        android:layout_height="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layerType="software"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-15dp"
+                        android:background="@drawable/dash_line_divider_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.75"
+                        android:id="@+id/lltrade_online_payment"
+                        android:background="@drawable/text_background_new">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/Online_Payment"
+                            android:padding="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

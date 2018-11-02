@@ -1,0 +1,1864 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/root_layout"
+    tools:showIn="@layout/activity_save_licence_renewal">
+
+    <RelativeLayout
+        android:id="@+id/relativetoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/li_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toolbar"
+                    android:theme="@style/AppTheme.AppBarOverlay"
+                    android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/relativetoolbar"
+        android:layout_marginTop="-80dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:layout_gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Renewal"/>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_without_change"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Without Change"
+                            android:textColor="@color/white"
+                            android:onClick="onRadioButtonClicked"
+                            android:textSize="12sp"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_with_change"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="With Change"
+                            android:visibility="gone"
+                            android:textColor="@color/white"
+                            android:onClick="onRadioButtonClicked"
+                            android:layout_marginLeft="0dp"
+                            android:textSize="12sp"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:id="@+id/card_applicant"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/details_app"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ll_app_first"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="5dp"
+                                    android:weightSum="2">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/mobileno"
+                                            android:id="@+id/et_mobile_no"
+                                            android:inputType="number"
+                                            android:maxLength="10"
+                                            android:focusable="false"
+                                            android:clickable="false"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/emailId"
+                                            android:id="@+id/et_email_id"
+                                            android:focusable="false"
+                                            android:clickable="false"
+                                            android:inputType="textEmailAddress"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/applicant_surname"
+                                            android:id="@+id/et_applicant_surname"
+                                            android:textColorHint="@color/black"
+                                            android:focusable="false"
+                                            android:clickable="false"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/firstname"
+                                            android:id="@+id/et_first_name"
+                                            android:focusable="false"
+                                            android:clickable="false"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/en_ll_app_first"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="5dp"
+                                    android:weightSum="2">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/mobileno"
+                                            android:id="@+id/en_et_mobile_no"
+                                            android:inputType="number"
+                                            android:maxLength="10"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/emailId"
+                                            android:id="@+id/en_et_email_id"
+                                            android:inputType="textEmailAddress"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/applicant_surname"
+                                            android:id="@+id/en_et_applicant_surname"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/firstname"
+                                            android:id="@+id/en_et_first_name"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ll_app_second"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:textStyle="bold"
+                                        android:textSize="14dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:text="Applicant Gender"/>
+
+                                    <RadioGroup
+                                        android:id="@+id/radioGroupGender"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/radio_male"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Male"
+                                            android:onClick="onRadioButtonClicked"
+                                            android:textSize="14sp"/>
+
+                                        <RadioButton
+                                            android:id="@+id/radio_female"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Female"
+                                            android:onClick="onRadioButtonClicked"
+                                            android:layout_marginLeft="10dp"
+                                            android:textSize="14sp"/>
+
+                                        <RadioButton
+                                            android:id="@+id/radio_tg"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Transgender"
+                                            android:onClick="onRadioButtonClicked"
+                                            android:layout_marginLeft="10dp"
+                                            android:textSize="14sp"/>
+
+                                    </RadioGroup>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/relation_surname"
+                                            android:id="@+id/et_relation_surname"
+                                            android:focusable="false"
+                                            android:clickable="false"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/relationame"
+                                            android:id="@+id/et_relation_name"
+                                            android:focusable="false"
+                                            android:clickable="false"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/door_no"
+                                            android:id="@+id/et_doorno"
+                                            android:focusable="false"
+                                            android:clickable="false"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/streetname"
+                                            android:id="@+id/et_streetname"
+                                            android:focusable="false"
+                                            android:clickable="false"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/cityname"
+                                            android:id="@+id/et_city_name"
+                                            android:focusable="false"
+                                            android:clickable="false"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/district"
+                                            android:focusable="false"
+                                            android:clickable="false"
+                                            android:id="@+id/et_district"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/pincode"
+                                            android:focusable="false"
+                                            android:clickable="false"
+                                            android:id="@+id/et_pincode"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/aadhar_no"
+                                        android:focusable="false"
+                                        android:clickable="false"
+                                        android:id="@+id/et_aadhar_no"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/gst"
+                                        android:focusable="false"
+                                        android:clickable="false"
+                                        android:id="@+id/et_gst"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content" />
+
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/en_ll_app_second"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/relation_surname"
+                                            android:id="@+id/en_et_relation_surname"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/relationame"
+                                            android:id="@+id/en_et_relation_name"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/door_no"
+                                            android:id="@+id/en_et_doorno"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/streetname"
+                                            android:id="@+id/en_et_streetname"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/cityname"
+                                            android:id="@+id/en_et_city_name"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/district"
+                                            android:id="@+id/en_et_district"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/pincode"
+                                            android:id="@+id/en_et_pincode"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/aadhar_no"
+                                            android:id="@+id/en_et_aadhar_no"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/gst"
+                                            android:id="@+id/en_et_gst"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:id="@+id/card_trade"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/details_trade_loc"
+                                android:textStyle="bold"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/grey"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/district"
+                                        android:id="@+id/et_trade_district"
+                                        android:textColor="#fff"
+                                        android:focusable="false"
+                                        android:textColorHint="@color/grey"
+                                        android:layout_height="wrap_content"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/panchayat"
+                                        android:id="@+id/et_trade_panchayat"
+                                        android:textColor="#fff"
+                                        android:focusable="false"
+                                        android:textColorHint="@color/grey"
+                                        android:layout_height="wrap_content" />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:id="@+id/ll_ward_street"
+                                android:orientation="horizontal">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/wardno"
+                                        android:focusable="false"
+                                        android:clickable="false"
+                                        android:id="@+id/et_trade_wardno"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content" />
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="-5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/streetname"
+                                        android:fontFamily="@font/roboto_medium"/>
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="12dp"
+                                        android:layout_marginTop="-6dp"
+                                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                        android:fontFamily="@font/avvaiyar"
+                                        android:hint="@string/streetname"
+                                        android:focusable="false"
+                                        android:clickable="false"
+                                        android:id="@+id/et_trade_streetname"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:id="@+id/en_ll_ward_street"
+                                android:visibility="gone"
+                                android:orientation="horizontal">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/wardno"
+                                        android:focusable="false"
+                                        android:id="@+id/enet_trade_wardno"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content" />
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="-4dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/streetname"
+                                        android:fontFamily="@font/roboto_medium"/>
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:layout_marginTop="-14dp"
+                                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                        android:fontFamily="@font/avvaiyar"
+                                        android:hint="@string/streetname"
+                                        android:focusable="false"
+                                        android:id="@+id/enet_trade_streetname"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:id="@+id/ll_door_li"
+                                android:orientation="horizontal">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/door_no"
+                                        android:focusable="false"
+                                        android:clickable="false"
+                                        android:id="@+id/et_trade_doorno"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/licencefor"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:id="@+id/et_trade_licencefor"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content" />
+
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:visibility="gone"
+                                android:id="@+id/enll_door_li"
+                                android:orientation="horizontal">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/door_no"
+                                        android:id="@+id/enet_trade_doorno"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/licencefor"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:id="@+id/enet_trade_licencefor"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content" />
+
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:id="@+id/card_trade_details">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/trade_details"
+                                android:textStyle="bold"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ll_trade_est"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginTop="-4dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/tradename"
+                                            android:fontFamily="@font/roboto_medium"/>
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                            android:fontFamily="@font/avvaiyar"
+                                            android:hint="@string/tradename"
+                                            android:id="@+id/et_trade_name"
+                                            android:focusable="false"
+                                            android:layout_marginTop="-7dp"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </LinearLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/tradeamt"
+                                            android:id="@+id/et_trade_amount"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/estname"
+                                            android:id="@+id/et_trade_estname"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/enll_trade_est"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginTop="-4dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/tradename"
+                                            android:fontFamily="@font/roboto_medium"/>
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:layout_marginTop="-7dp"
+                                            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                            android:fontFamily="@font/avvaiyar"
+                                            android:hint="@string/tradename"
+                                            android:id="@+id/enet_trade_name"
+                                            android:focusable="false"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </LinearLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/tradeamt"
+                                            android:id="@+id/enet_trade_amount"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:hint="@string/estname"
+                                            android:id="@+id/enet_trade_estname"
+                                            android:textColorHint="@color/black"
+                                            android:layout_height="wrap_content"/>
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".5"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/if_motor"/>
+
+                                <CheckBox
+                                    android:id="@+id/checkbox_motor"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/check_motorused"
+                                    android:layout_weight="1.5"
+                                    android:onClick="onCheckboxClicked"
+                                    tools:ignore="OnClick" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:visibility="gone"
+                                android:layout_marginTop="8dp"
+                                android:id="@+id/ll_motor_trade"
+                                android:orientation="horizontal">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/machine_no"
+                                        android:focusable="false"
+                                        android:clickable="false"
+                                        android:id="@+id/et_numberofmachine"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/tot_horsepower"
+                                        android:id="@+id/et_horsepower"
+                                        android:focusable="false"
+                                        android:clickable="false"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:visibility="gone"
+                                android:layout_marginTop="8dp"
+                                android:id="@+id/enll_motor_trade"
+                                android:orientation="horizontal">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/machine_no"
+                                        android:id="@+id/enet_numberofmachine"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/tot_horsepower"
+                                        android:id="@+id/enet_horsepower"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".8"
+                                    android:layout_gravity="center_vertical"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="@string/trade_property"/>
+
+                                <RadioGroup
+                                    android:id="@+id/radioGroup1"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1.2"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radio_rental"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rental"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:textSize="14sp"/>
+
+                                    <RadioButton
+                                        android:id="@+id/radio_own"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Own"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:layout_marginLeft="10dp"
+                                        android:textSize="14sp"/>
+
+                                </RadioGroup>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ll_rental_agree_copy"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:layout_marginTop="8dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".8"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/rentel_agree"/>
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_rental"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/check_rental"
+                                        android:layout_weight="1.2"
+                                        android:onClick="onCheckboxClicked"
+                                        tools:ignore="OnClick" />
+
+                                </LinearLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="8dp"
+                                    android:id="@+id/til_rent"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/rent_paid"
+                                        android:id="@+id/et_rentpaid"
+                                        android:focusable="false"
+                                        android:clickable="false"
+                                        android:text="0"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="8dp"
+                                    android:id="@+id/entil_rent"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:textSize="14dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/rent_paid"
+                                        android:text="0"
+                                        android:id="@+id/enet_rentpaid"
+                                        android:textColorHint="@color/black"
+                                        android:layout_height="wrap_content"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".5"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/doc_noc"/>
+
+                                <CheckBox
+                                    android:id="@+id/checkbox_noc"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/check_doc_noc"
+                                    android:layout_weight="1.5"
+                                    android:onClick="onCheckboxClicked"
+                                    tools:ignore="OnClick" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:id="@+id/card_attachment">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/attach_details"
+                                android:textStyle="bold"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:textStyle="bold"
+                                    android:textSize="16dp"
+                                    android:drawableRight="@drawable/ic_asteriskneww"
+                                    android:drawablePadding="5dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/app_photo"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/edittext_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/georgia"
+                                        android:gravity="start"
+                                        android:padding="5dp"
+                                        android:id="@+id/tv_choosen_app_photo"
+                                        android:text="@string/choosefile"                            android:textAlignment="viewStart"
+                                        android:textSize="@dimen/fragment_body_text_size"
+                                        android:textStyle="italic|bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_upload_app_photo"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:text="@string/upload"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="2"
+                                        android:enabled="true"
+                                        android:fontFamily="@font/georgia"
+                                        android:padding="5dp"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/fragment_body_text_size"
+                                        android:textStyle="italic|bold" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:textStyle="bold"
+                                    android:textSize="16dp"
+                                    android:drawableRight="@drawable/ic_asteriskneww"
+                                    android:drawablePadding="5dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/address_proof"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/edittext_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/georgia"
+                                        android:gravity="start"
+                                        android:padding="5dp"
+                                        android:id="@+id/tv_choosen_app_address"
+                                        android:text="@string/choosefile"                            android:textAlignment="viewStart"
+                                        android:textSize="@dimen/fragment_body_text_size"
+                                        android:textStyle="italic|bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_upload_app_address"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:text="@string/upload"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="2"
+                                        android:enabled="true"
+                                        android:fontFamily="@font/georgia"
+                                        android:padding="5dp"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/fragment_body_text_size"
+                                        android:textStyle="italic|bold" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:id="@+id/ll_attach_prop_tax_own"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:textStyle="bold"
+                                    android:textSize="16dp"
+                                    android:drawableRight="@drawable/ic_asteriskneww"
+                                    android:drawablePadding="5dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/prop_tax"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/edittext_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/georgia"
+                                        android:gravity="start"
+                                        android:padding="5dp"
+                                        android:id="@+id/tv_choosen_prop_tax"
+                                        android:text="@string/choosefile"                            android:textAlignment="viewStart"
+                                        android:textSize="@dimen/fragment_body_text_size"
+                                        android:textStyle="italic|bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_upload_prop_tax"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:text="@string/upload"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="2"
+                                        android:enabled="true"
+                                        android:fontFamily="@font/georgia"
+                                        android:padding="5dp"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/fragment_body_text_size"
+                                        android:textStyle="italic|bold" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:id="@+id/ll_attach_rental_agreement"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:textStyle="bold"
+                                    android:textSize="16dp"
+                                    android:drawableRight="@drawable/ic_asteriskneww"
+                                    android:drawablePadding="5dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/rental_agree"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/edittext_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/georgia"
+                                        android:gravity="start"
+                                        android:padding="5dp"
+                                        android:id="@+id/tv_choosen_rent_agreement"
+                                        android:text="@string/choosefile"                            android:textAlignment="viewStart"
+                                        android:textSize="@dimen/fragment_body_text_size"
+                                        android:textStyle="italic|bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_upload_rental_agree"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:text="@string/upload"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="2"
+                                        android:enabled="true"
+                                        android:fontFamily="@font/georgia"
+                                        android:padding="5dp"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/fragment_body_text_size"
+                                        android:textStyle="italic|bold" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ll_attach_noc"
+                                android:visibility="gone"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:textStyle="bold"
+                                    android:textSize="16dp"
+                                    android:drawableRight="@drawable/ic_asteriskneww"
+                                    android:drawablePadding="5dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/noc_doc"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/edittext_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/georgia"
+                                        android:gravity="start"
+                                        android:padding="5dp"
+                                        android:id="@+id/tv_choosen_noc_doc"
+                                        android:text="@string/choosefile"
+                                        android:textAlignment="viewStart"
+                                        android:textSize="@dimen/fragment_body_text_size"
+                                        android:textStyle="italic|bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_upload_noc_doc"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:text="@string/upload"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="2"
+                                        android:enabled="true"
+                                        android:fontFamily="@font/georgia"
+                                        android:padding="5dp"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/fragment_body_text_size"
+                                        android:textStyle="italic|bold" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/renewal_year"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/georgia"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_renewal_request"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/georgia"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/button_color"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/submit"
+                        android:id="@+id/button_save"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
