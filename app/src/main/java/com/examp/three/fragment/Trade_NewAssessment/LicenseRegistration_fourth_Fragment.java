@@ -725,7 +725,7 @@ public class LicenseRegistration_fourth_Fragment extends Fragment implements Val
         li_applicationphoto_upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(fileApplicantPhoto!=null)
+                if(fileApplicantPhoto!=null
                     if(Common.isNetworkAvailable(getActivity())){
                         uploadImage(fileApplicantPhoto, "InsertPhoto", mobileno, appregid, userid, username, "Android");
                     }else{
